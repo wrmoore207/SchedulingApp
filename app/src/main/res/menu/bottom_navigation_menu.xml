@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigatoin_today"
+        android:enabled="true"
+        android:title="@string/nav_today"
+        />
+    <item
+        android:id="@+id/navigation_schedule"
+        android:enabled="true"
+        android:title="@string/nav_schedule"/>
+    <item
+        android:id="@+id/navigation_Requests"
+        android:enabled="true"
+        android:title="@string/requests"/>
+
+    <item
+        android:id="@+id/navigation_my_info"
+        android:enabled="true"
+        android:title="@string/my_info"/>
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">semesterProject</string>
+    <string name="text_label_1">Today</string>
+    <string name="text_label_2">Schedule</string>
+    <string name="requests">Requests</string>
+    <string name="my_info">My Info</string>
+    <string name="nav_today">Today</string>
+    <string name="nav_schedule">My Schedule</string>
+</resources>
