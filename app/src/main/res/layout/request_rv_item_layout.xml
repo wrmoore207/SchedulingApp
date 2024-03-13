@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- Employee Image -->
+    <ImageView
+        android:id="@+id/employeeImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Employee Name TextView -->
+    <TextView
+        android:id="@+id/employeeNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@id/employeeImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/employeePositionTextView"/>
+
+    <!-- Employee Position TextView -->
+    <TextView
+        android:id="@+id/employeePositionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Software Developer"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@id/employeeImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/employeeNameTextView"
+        app:layout_constraintBottom_toTopOf="@id/Additional_Info_1"/>
+
+    <!-- Additional Info 1 TextView -->
+    <TextView
+        android:id="@+id/Additional_Info_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Additional Info 1"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@id/employeeImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/employeePositionTextView"
+        app:layout_constraintBottom_toTopOf="@id/Additional_Info_2"/>
+
+    <!-- Additional Info 2 TextView -->
+    <TextView
+        android:id="@+id/Additional_Info_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Additional Info 2"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@id/employeeImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Additional_Info_1"
+        app:layout_constraintBottom_toTopOf="@id/notesTextView"/>
+
+    <!-- Notes TextView -->
+    <TextView
+        android:id="@+id/notesTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@id/employeeImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Additional_Info_2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

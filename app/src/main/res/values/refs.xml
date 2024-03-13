@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_profile">P</drawable>
+    <drawable name="ic_notifications">!!!</drawable>
+    <drawable name="ic_dashboard">D</drawable>
+    <drawable name="ic_home">H</drawable>
+</resources>

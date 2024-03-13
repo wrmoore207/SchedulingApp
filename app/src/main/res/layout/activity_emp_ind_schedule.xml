@@ -57,7 +57,7 @@
         app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:listitem="@layout/your_recyclerview_item_layout"/>
+        tools:listitem="@layout/schedule_recyclerview_item_layout"/>
 
     <!-- Bottom NavigationView -->
     <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -3,4 +3,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="banner_color">#293241</color>
+    <color name="darkblue">#293241</color>
+    <color name="lightblue">#E1EDF4</color>
+    <color name="orange">#F77F00</color>
+    <color name="PrussianBlue"> #003049 </color>
+    <color name="FireEngineRed">#D62828</color>
+    <color name="Xanthous">#FCBF49</color>
+    <color name="Vanilla">#EAE2B7</color>
+
 </resources>

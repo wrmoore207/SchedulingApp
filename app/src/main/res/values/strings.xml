@@ -6,4 +6,5 @@
     <string name="my_info">My Info</string>
     <string name="nav_today">Today</string>
     <string name="nav_schedule">My Schedule</string>
+    <string name="scheduling_requests">Scheduling Requests</string>
 </resources>

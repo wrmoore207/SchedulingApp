@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "685974641282",
+    "project_id": "semesterproject-c22c5",
+    "storage_bucket": "semesterproject-c22c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685974641282:android:572935d4af2b1114d1b29b",
+        "android_client_info": {
+          "package_name": "com.example.semesterproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFas-fbSBGPXOfnjzFuTH-IIatFWyAvEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

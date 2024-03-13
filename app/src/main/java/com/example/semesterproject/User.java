@@ -1,14 +1,49 @@
 package com.example.semesterproject;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
 // User class
-class User {
+public class User implements Parcelable {
     private int userId;
     private String name;
     private String email;
-
-    private Team team;
-    private Role role;
-
+    private int phone;
     private String password;
+
+    public User(int userId, String name, String email, int phone, String password) {
+        this.userId = userId;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+    }
+
+    protected User(Parcel in) {
+        userId = in.readInt();
+        name = in.readString();
+        email = in.readString();
+        phone = in.readInt();
+        password = in.readString();
+    }
+
+    public static final Creator<User> CREATOR = new Creator<User>() {
+        @Override
+        public User createFromParcel(Parcel in) {
+            return new User(in);
+        }
+
+        @Override
+        public User[] newArray(int size) {
+            return new User[size];
+        }
+    };
+
+    public User(String uid) {
+    }
+
 
     public int getUserId() {
         return userId;
@@ -34,20 +69,12 @@ class User {
         this.email = email;
     }
 
-    public Role getRole() {
-        return role;
+    public int getPhone() {
+        return phone;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    public Team getTeam() {
-        return team;
-    }
-
-    public void setTeam(Team team) {
-        this.team = team;
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 
     public String getPassword() {
@@ -58,30 +85,30 @@ class User {
         this.password = password;
     }
 
-    public User(int userId, String name, String email, Role role, Team team, String password) {
-        this.userId = userId;
-        this.name = name;
-        this.email = email;
-        this.role = role;
-        this.team = team;
-        this.password = password;
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeInt(userId);
+        dest.writeString(name);
+        dest.writeString(email);
+        dest.writeInt(phone);
+        dest.writeString(password);
     }
 }
 
-// Enum for user roles
-enum Role {
-    EMPLOYEE,
-    MANAGER,
-    ADMINISTRATOR
-}
-
-enum Team{
-    KITCHEN,
-    BAKE,
-    WAITSTAFF,
-    JOAT,
-    GIFTSHOP,
-    CAPTAIN,
-    MATE,
-    BOOTH,
+enum Position {
+    Bartender,
+    Bake,
+    Booth,
+    Captain,
+    Clams,
+    Joat,
+    Kitchen,
+    Manager,
+    Mate,
+    Wait
 }
